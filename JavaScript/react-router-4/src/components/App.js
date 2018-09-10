@@ -18,7 +18,7 @@ const App = () => (
   <BrowserRouter>
     <div className="container">
       <Header />
-      
+
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/about" render={ () => <About title='About' /> } />
