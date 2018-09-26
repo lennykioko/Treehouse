@@ -7,4 +7,3 @@ html = urlopen(url)
 soup = BeautifulSoup(html.read(), "html.parser")
 
 print(soup.prettify())
-
