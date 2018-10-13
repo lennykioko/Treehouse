@@ -160,3 +160,15 @@ so, to get the second last and last item you do
 to update( modiy/add) multiple key-value pairs in a dictionary at once you can do:
 
 `dictiionary.update({key1: value1, key2: value2})`
+
+To overcome the need to pass things in order in the .format use:
+
+`print("Hi, I'm {name} and I love to eat {food}!".format(food="tacos", name="Kenneth"))`
+
+.keys() is for specifically getting the keys in a dictionary and will optimize looping over a dict with many records e.g. 100+ keys
+
+
+for key in dictionary.keys() returns an iterable of type `dict_keys`
+for value in dictionary.values() returns an iterable of type `dict_values`
+for item in dictionary.items() - returns a `tuple` with key-value pairs
+
