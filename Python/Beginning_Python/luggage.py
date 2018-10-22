@@ -6,12 +6,12 @@ def packer(name="User", **kwargs):
 packer(name="Lenny", car="Range", bike="Honda", house="Mansion")
 
 
-def unpacker(name="User", profession="dev"):
-    print("{} is a great {}".format(name, profession))
+# def unpacker(name="User", profession="dev"):
+#     print("{} is a great {}".format(name, profession))
 
-name_career = {"name": "Jerry", "profession": "Engineer"}
+# name_career = {"name": "Jerry", "profession": "Engineer"}
 
-unpacker(**name_career)
+# unpacker(**name_career)
 
-# alternatively
-unpacker(**{"name": "Jerry", "profession": "Engineer"})
+# # alternatively
+# unpacker(**{"name": "Jerry", "profession": "Engineer"})

@@ -1,35 +1,9 @@
-def num_teachers(teachers):
-    return len(teachers.keys())
+import requests
 
-def num_courses(teachers):
-    courses = 0
-    for value in teachers.values():
-        courses += len(value)
-    return courses
+email = "nishleymburu@gmail.com"
+url = "http://picasaweb.google.com/data/entry/api/user/{}?alt=json".format(email)
 
-def courses(teachers):
-    courses = []
-    for value in teachers.values():
-        courses.extend(value)
-    return courses
+data = requests.get(url).json()
+image_url = data["entry"]["gphoto$thumbnail"]["$t"]
 
-def most_courses(teachers):
-    max_count = 0
-    max_teacher = ""
-    for item in teachers.items():
-        if len(item[1]) > max_count:
-            max_count = len(item[1])
-            max_teacher = item[0]
-
-    return max_teacher
-
-def stats(teachers):
-    stats = []
-    for item in teachers.items():
-        stat = [item[0], len(item[1])]
-        stats.append(stat)
-
-    return stats
-
-
-print(stats({'Andrew Chalkley': ['jQuery Basics', 'Node.js Basics'], 'Kenneth Love': ['Python Basics', 'Python Collections', 'Flask Basics']}))
+print(image_url)

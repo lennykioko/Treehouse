@@ -114,7 +114,8 @@ dunder stands for double under (score)
 
 ## Python collections
 
-you can use extend wtih non-list items
+### Lists
+you can use extend with non-list items (iterables e.g strings)
 
 e.g.
 
@@ -157,6 +158,8 @@ so, to get the second last and last item you do
 
 `list[-2:]`
 
+### Dictionaries
+
 to update( modiy/add) multiple key-value pairs in a dictionary at once you can do:
 
 `dictiionary.update({key1: value1, key2: value2})`
@@ -172,3 +175,88 @@ for key in dictionary.keys() returns an iterable of type `dict_keys`
 for value in dictionary.values() returns an iterable of type `dict_values`
 for item in dictionary.items() - returns a `tuple` with key-value pairs
 
+### Tuples
+
+its the comma rather than the brackets that actually make a tuple as in `my_tuple = 1,` will create a tuple while `my_tuple = (1)` won't. However, it's good practice to include the brackets as it makes it more obvious.
+
+to use the tuple keyword pass in an iterable e.g a list
+
+Tuples are immutable but you can change mutable objects e.g. lists that are inside a tuple.
+
+tuple swapping  `a, b = b, a` - tuples allow us to swap values without the need of creating a new third variable (c).
+
+`*args` is actually unpacking a tuple.
+
+`for index, letter in enumerate(alphabet, start=1):
+    print("{} -- {}".format(index, letter))`
+
+- we do plus one to start a as number 1 instead of 0
+- leveraging on unpacking of tuples
+
+If you know you'll get back multiple values and you don't care about one of them, assign it to _. For example:
+
+`for index, _ in enumerate(my_list):`
+
+The list item won't be available in the loop but you'll still have the step count.
+
+Since dict.items() gives us a list of tuples, we could do this with unpacking a single variable into str.format().
+
+`for group in my_dict.items():
+    print("{}: {}".format(*group))`
+
+enumerate():
+
+ `my_list = [5, 2, 4, 1, 3]
+ for index, value in enumerate(my_list):
+    print("{}: {}".format(index, value))
+`
+We have the same ability here since, again, we're getting a list of tuples.
+
+`for group in enumerate(my_list):
+    print("{}: {}".format(*group))`
+
+
+### Sets
+
+`set()` - empty set, `{}` - empty dictionary
+
+`set([1, 3, 5])` and `{1, 3, 5}` - both create a set
+
+`my_set.add(item)` - appending new item to a set.
+
+`my_set.update({2, 23}, {3, 39})` - you can use update to add (even multiple) sets onto another set
+
+`my_set.remove(item)` - will raise a KeyError if item does not exist
+
+`my_set.discard(item)` - will do nothing if item does not exist.
+
+`my_set.pop()` also exists.
+
+`set1.union(set2)` or `set1 | set2` - joins the two sets without modifying them `.update()` will modify
+
+`set1.difference(set2)` or `set1 - set2-` finds what is in set1 but not in set2 - finds what is unique in set1
+
+`set1.symmetric_difference(set2)` or set1 ^ set2 - items unique to both sets in order. (not shared)
+
+`set1.intersection(set2)` or set1 & set2 - items in both sets. (common)
+
+`isdisjoint(other)`
+Return True if the set has no elements in common with other. Sets are disjoint if and only if `their intersection is the empty set.`
+
+`issubset(other)`
+
+ `set <= other` - Test whether every element in the set is in other.
+
+`set < other` - Test whether the set is a proper subset of other, that is, `set <= other and set != other.`
+
+`issuperset(other)`
+
+`set >= other` - Test whether every element in other is in the set.
+
+`set > other` - Test whether the set is a proper superset of other, that is, `set >= other and set != other.`
+
+`copy()`
+Return a new set with a shallow copy of s.
+
+
+`random.choice(items)` will randomly pick an item for you in an indexed iterable e.g a `tuple` or a `list`
