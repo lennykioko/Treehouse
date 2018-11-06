@@ -1,4 +1,4 @@
-# Exporing Flask
+# Exploring Flask
 
 framework - collection of code that makes doing something simpler/easier
 
