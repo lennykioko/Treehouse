@@ -113,6 +113,8 @@ Modifying a list while looping through it is discouraged as it will produce unex
 
 dunder stands for double under (score)
 
+`if __name == "__main__"` - checks if the file is run directly and is not being imported.
+
 ## Python collections
 
 ### Lists
