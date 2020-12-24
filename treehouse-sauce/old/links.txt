@@ -1,0 +1,10 @@
+https://teamtreehouse.com/library/react-basics-2
+https://teamtreehouse.com/library/react-components
+https://teamtreehouse.com/library/using-create-react-app
+https://teamtreehouse.com/library/react-context-api
+https://teamtreehouse.com/library/react-router-4-basics-2
+https://teamtreehouse.com/library/whats-new-in-react-16
+https://teamtreehouse.com/library/data-fetching-in-react
+https://teamtreehouse.com/library/react-hooks
+https://teamtreehouse.com/library/learn-more-about-react
+https://teamtreehouse.com/library/deploying-a-react-app

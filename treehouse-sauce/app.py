@@ -10,8 +10,8 @@ from selenium.webdriver.support import expected_conditions as EC
 import youtube_dl
 
 
-EMAIL = '2020tomrae@gmail.com'
-PASSWORD = 'kusoma2020'
+EMAIL = ''
+PASSWORD = ''
 EXTERNAL_DL = 'aria2c'
 HOME_DIR = os.getcwd()
 

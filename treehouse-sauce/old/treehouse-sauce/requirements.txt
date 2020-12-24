@@ -1,0 +1,5 @@
+beautifulsoup4==4.7.1
+requests==2.21.0
+youtube-dl==2019.4.30
+selenium==3.141.0
+urllib3==1.25.8
