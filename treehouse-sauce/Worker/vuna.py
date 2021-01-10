@@ -4,10 +4,10 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
-EMAIL = 'bileonairefx@gmail.com'
-PASSWORD = 'kusoma2020'
+EMAIL = ''
+PASSWORD = ''
 
-HARVEST_URL = "https://teamtreehouse.com/tracks/intermediate-python"
+HARVEST_URL = "https://teamtreehouse.com/library/q:php/sort:difficulty"
 
 
 def main():
