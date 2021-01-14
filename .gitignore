@@ -3,7 +3,7 @@ node_modules/
 env/
 .idea/
 .env
-
+creds.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
